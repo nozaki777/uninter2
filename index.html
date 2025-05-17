@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(168, 247, 214);
+    }
+
+    h1 {
+        color: blue;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .imghobbie {
+        border-radius: 10%;
+    }
+
+    a:hover { 
+        color: red;
+        transition: 0.5s;
+        opacity: 0.7;
+    }
+</style>
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 50%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+    }
+    th {
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Bruno Anderson Pereira Nozaki</h1>
+    <p>Nome: Bruno Nozaki</p>
+    <p>Idade: 39 anos</p>
+    <p>Cidade Natal: Belém</p>
+    <p>Interesse: Adquirir conhecimentos e certificação para trabalhar como analista e desenvolvedor de sistemas</p>
+    <input type="button" class="motivacao" value="Clique para ver uma mensagem!"> 
+    <h4>Hobbies:</h4>
+    <ul>Cultivar a terra</ul><br>
+    <ul>Pescar</ul><br>
+    <ul>Ouvir música</ul><br>
+    <img class="imghobbie" src="http://www.ipaam.am.gov.br/wp-content/uploads/2018/02/pescaria.jpg" >
+    <table>
+        <th colspan="2">Paises para visitar</th>
+        <tr>
+            <td>Alemanha</td>
+            <td><img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/4d55/live/6f26ce30-769a-11ef-acda-e96fa573e779.jpg.webp"></td>
+        </tr>
+        <tr>
+            <td>Finlândia</td>
+            <td><img src="https://jornalsemanario.com.br/wp-content/uploads/2023/02/girassol_aurora_boreal-900x530-1-768x452.jpg"></td>
+        </tr>
+        <tr>
+            <td>Escócia</td>
+            <td><img src="https://goescocia.com/wp-content/uploads/razones-visitar-escocia.jpg"></td>
+        </tr>
+    </table>
+    
+    <a href="https://www.cnnbrasil.com.br/economia/money/">Site Interessante para informações de mercado</a>
+
+<script>
+    const elements = document.querySelectorAll(".motivacao")
+elements.
+  forEach(e => {
+    e.onclick = function() { alert('Seja bem vindo!') }
+  })
+</script>
+</body>
+</html>
